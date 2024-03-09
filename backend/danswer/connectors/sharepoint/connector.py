@@ -220,7 +220,7 @@ class SharepointConnector(LoadConnector, PollConnector):
                     email=driveitem_object.last_modified_by.user.email,
                 )
             ],
-            metadata={},
+            metadata={"Country Of Control": "US"},
         )
         return doc
 
